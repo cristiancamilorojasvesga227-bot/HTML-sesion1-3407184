@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*importacion de fuentes*/
+        @font-face {
+            font-family: 'inter';
+            src:url('inter/Inter.ttf') format ('truetype');
+            font-weight: normal;
+            font-style: bold;
+            font-display: swap;
+
+        }
+
+        /*reseteo de estilos*/
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        /*body*/
+        body{
+            background-color: lightgrey;
+            /*fuente*/
+            font-family: 'inter',sans-serif;
+        }
+
+        /* BEM Bloque(contenedor
+        elemento
+        modificador)*/
+
+        .card{
+            /*tamaño de la caja*/
+            width: 300px;
+            height: auto;
+            /*fondo*/
+            background-color: white;
+            /*centrado*/
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 5px 1px 13px 4px  rgba(217,214,214,0.75);
+            border-radius: 15px;
+        }
+
+        .card__empresa{
+            width: 100%;
+            height: 100px;
+            background-color: #3E3E40;
+
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15xp;
+        /*texto*/
+        color:white;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 50px;
+        }
+
+        .card__flag{
+            background-color: #76C4C4;
+            height: 60px;
+        }
+
+        .card__retrato{
+            width: 150px;
+            height: 150px;
+            display: block;
+            /*distorsión*/
+            object-fit: cover;
+            /*posicionamiento */
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -100px;
+            /*border*/
+            border-radius: 50%;
+            border: white solid 5px;
+
+        }
+
+        .card__nombre{
+            text-align: center;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 20px;
+            /*espaciar las letras*/
+            letter-spacing: 3px;
+        }
+
+        .card__nombre--negrita{
+            font-weight: bold;
+        }
+
+        .card__tabla{
+            font-size: 10px;
+            width: 200px;
+            /*centrado*/
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+
+        .card__tabla--atributo{
+            font-weight: bold;
+            color: #76C4C4;
+        }
+
+        .card__profesion {
+    text-align: center;
+    color: #4888cc; /* Este es un tono azul profesional */
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 20px; /* Espacio al final de la tarjeta */
+    font-weight: 500;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class ="card">
+        <!--contenedor-->
+    <div>
+        <!--Empresa-->
+        <div class="card__empresa">
+            SENA CGMLTI
+        </div>
+        <!--FLAG(turquesa)-->
+        <div class="card__flag"></div>
+        <!--retrato-->
+        <img class="card__retrato"
+         src="luffy.png"
+          alt="Retrato">
+          <!--nombre-->
+        <div class="card__nombre">Duban
+                        <span class="card__nombre--negrita"> 
+                            Alejandro
+                        </span>
+                    </div>
+             <!--profesion-->
+             <div class="card__profesion">Web design & Developer</div>
+        <table class="card__tabla">
+            <tr>
+                <td class="card__tabla--atributo">ID</td>
+                <td>12345</td>
+            </tr>
+            <tr>
+                <td>Documento</td>
+                <td>324423432</td>
+            </tr>
+            <tr>
+                <td>correo</td>
+                <td>jhonesjhonson@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
